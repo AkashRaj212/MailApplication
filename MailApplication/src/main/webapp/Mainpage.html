@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Email App</title>
+	<link rel="stylesheet" type="text/css" href="Mainpage.css">
+</head>
+<body>
+	<div class="container">
+		<div class="navigation">
+			<ul>
+				<li onclick="Inbox()"><a href="#inbox" class="active">Inbox</a></li>
+				<li onclick="ComposeMail()"><a href="#compose">Compose Mail</a></li>
+				<li onclick="sent()"><a href="#sent">Sent</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div id="inbox" class="tabcontent">
+				<h2>Inbox</h2>
+				
+			</div>
+			<div id="compose" class="tabcontent">
+				<h2>Compose Mail</h2>
+				<div id="wholeContainer">
+					<form >
+					  <label for="to">To:</label>
+					  <input type="email" id="to" name="to"><br>
+					  <label for="subject">Subject:</label>
+					  <input type="text" id="subject" name="subject"><br>
+					  <label for="message">Message:</label>
+					  <textarea id="message" name="message"></textarea><br>
+					  <input type="submit" value="Send" onclick="sendMail()">
+					</form>
+					</div>
+				
+			</div>
+			<div id="sent" class="tabcontent" >
+				<h2>Sent</h2>
+				
+			</div>
+		</div>
+	</div>
+	
+	<script src="Mainpage.js">
+		
+	
+	</script>
+</body>
+</html>
